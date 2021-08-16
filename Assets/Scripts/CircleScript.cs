@@ -11,7 +11,7 @@ public class CircleScript : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector3(-1,0,0);
+        // transform.position = new Vector3(0,0,0);
     }
 
     // Update is called once per frame
@@ -19,23 +19,30 @@ public class CircleScript : MonoBehaviour
     {
         float Horizontal = Input.GetAxis("Horizontal");
         float Vertical = Input.GetAxis("Vertical");
-        transform.Translate(new Vector3(1, Vertical, Horizontal) * Time.deltaTime * _speed);
+        transform.Translate(new Vector3(1 * Horizontal, 0, 1) * Time.deltaTime * _speed);
 
-        if(transform.position.x > 16f)
-            {
-                transform.position = new Vector3(16f,transform.position.y,transform.position.z);
-            }
+        // if(transform.position.x > 16f)
+        //     {
+        //         transform.position = new Vector3(16f,transform.position.y,transform.position.z);
+        //     }
 
-            if(transform.position.x < -16f)
-            {
-                transform.position = new Vector3(-16f,transform.position.y,transform.position.z);
-            }
+        //     if(transform.position.x < -16f)
+        //     {
+        //         transform.position = new Vector3(-16f,transform.position.y,transform.position.z);
+        //     }
 
+    }
+
+
+    private void OnTriggerStay(Collider other) {
+        Debug.Log("workging");
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
+        Debug.Log("workging");
         // if(other.tag == "New Cube")
         // {
         //     transform.localScale += new Vector3(1,1,1);
