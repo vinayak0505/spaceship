@@ -6,17 +6,15 @@ public class CollisionExplode : MonoBehaviour
 {
     [SerializeField] ParticleSystem collectParticle = null;
 
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        Debug.Log("workging");
+        if (other.tag == "Bullet")
         {
             Collect();
+            Destroy(other.gameObject);
+            Debug.Log("Asteroid is exploded");
         }
-        //if (collectParticle && !collectParticle.isEmitting)
-        //{
-        //    Destroy(gameObject);
-        //    Debug.Log("Stop");
-        //}
     }
 
     public void Collect()
