@@ -6,27 +6,25 @@ public class CollisionExplode : MonoBehaviour
 {
     [SerializeField] ParticleSystem collectParticle = null;
 
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Collect();
         }
-        if (true && !collectParticle.isEmitting)
-        {
-            Destroy(gameObject);
-            Debug.Log("Stop");
-        }
+        //if (collectParticle && !collectParticle.isEmitting)
+        //{
+        //    Destroy(gameObject);
+        //    Debug.Log("Stop");
+        //}
     }
 
     public void Collect()
     {
         collectParticle.Play();
-        Debug.Log(collectParticle.isPlaying);
-        Debug.Log(collectParticle.IsAlive());
+        Destroy(gameObject);
 
-       
+
         //if(ParticleSystemStopAction.Callback )
         //{
         //    var main = collectParticle.main;
