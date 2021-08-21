@@ -6,7 +6,12 @@ TagManager:
   tags:
   - New Cube
   - Bad Cube
+<<<<<<< HEAD
   - Planet
+=======
+  - Bullet
+  - Asteroid
+>>>>>>> 02af170b4ea614c401204f15b4506566113cc192
   layers:
   - Default
   - TransparentFX

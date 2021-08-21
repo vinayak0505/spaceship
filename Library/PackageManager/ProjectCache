@@ -5,16 +5,26 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 637651617353750275
     m_Hash: 3870291422
+=======
+      ticks: 637651506237030101
+    m_Hash: 1057299360
+>>>>>>> 02af170b4ea614c401204f15b4506566113cc192
   m_LockFileStatus:
     m_FilePath: C:/Users/harma/Unity/spaceship/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 637651617353760270
     m_Hash: 2579885654
+=======
+      ticks: 637651506237660176
+    m_Hash: 1016591461
+>>>>>>> 02af170b4ea614c401204f15b4506566113cc192
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
