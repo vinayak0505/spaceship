@@ -19,7 +19,7 @@ public class CircleScript : MonoBehaviour
     {
         float Horizontal = Input.GetAxis("Horizontal");
         float Vertical = Input.GetAxis("Vertical");
-        transform.Translate(new Vector3(1 * Horizontal, 0, 1) * Time.deltaTime * _speed);
+        //transform.Translate(new Vector3(1 * Horizontal, 0, 1) * Time.deltaTime * _speed);
 
         // if(transform.position.x > 16f)
         //     {
