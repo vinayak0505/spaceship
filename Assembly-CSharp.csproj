@@ -53,7 +53,8 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CircleScript.cs" />
+    <Compile Include="Assets\CollisionExplode.cs" />
+    <Compile Include="Assets\Scripts\jetSript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

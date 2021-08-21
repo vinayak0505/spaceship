@@ -6,6 +6,7 @@ TagManager:
   tags:
   - New Cube
   - Bad Cube
+  - Planet
   layers:
   - Default
   - TransparentFX
